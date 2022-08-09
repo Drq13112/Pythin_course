@@ -1,0 +1,58 @@
+<<<<<<< HEAD
+{
+  "orders": [
+    {
+      "size": "medium",
+      "prize": 15.67,
+      "toppings": [ "mushrooms", "pepperoni", "albahaca" ],
+      "extra_cheese": false,
+      "delivery": true,
+      "client": {
+        "name": "Jane Doe",
+        "phone": null,
+        "email": "janedoe@email.com"
+      }
+    },
+    {
+      "size": "small",
+      "prize": 6.54,
+      "toppings": null,
+      "extra_cheese": true,
+      "delivery": false,
+      "client": {
+        "name": "Foo Jones",
+        "phone": "556-342-452",
+        "email": null
+      }
+    }
+  ]
+=======
+{
+  "orders": [
+    {
+      "size": "medium",
+      "prize": 15.67,
+      "toppings": [ "mushrooms", "pepperoni", "albahaca" ],
+      "extra_cheese": false,
+      "delivery": true,
+      "client": {
+        "name": "Jane Doe",
+        "phone": null,
+        "email": "janedoe@email.com"
+      }
+    },
+    {
+      "size": "small",
+      "prize": 6.54,
+      "toppings": null,
+      "extra_cheese": true,
+      "delivery": false,
+      "client": {
+        "name": "Foo Jones",
+        "phone": "556-342-452",
+        "email": null
+      }
+    }
+  ]
+>>>>>>> 94cc937c85286f9ae8e1f0ecb5cd73312d4a6149
+}
