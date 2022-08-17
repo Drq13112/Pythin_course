@@ -26,13 +26,6 @@ class Item(BaseModel):
 
 app = FastAPI()
 
-
-class Item(BaseModel):
-    name: str
-    price: float
-    is_offer: Union[bool, None] = None
-
-
 @app.get("/users/me")
 async def read_user_me():
     return {"user_id": "the current user"}
