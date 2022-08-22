@@ -49,12 +49,12 @@ https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
 
 ## List of useful commands
 
--- GIT --
-# git init // Generate a git empty local repository in the path where you are 
-# git status // Show the status files within the path
-# git add <filename> // Add only the file called to the staging area
-# git add . // Add all the files to the staging area
-# git commit -m “ Write the commit purpose inside these quotation marks ” // This command records or snapshots the file permanently in the version history
+### GIT
+#### git init // Generate a git empty local repository in the path where you are 
+#### git status // Show the status files within the path
+#### git add <filename> // Add only the file called to the staging area
+#### git add . // Add all the files to the staging area
+#### git commit -m “ Write the commit purpose inside these quotation marks ” // This command records or snapshots the file permanently in the version history
 # git diff // Show all the differences between working directory files and localrepo files
 # git git diff –staged // Shows the differences between the files in the staging area and the latest version present
 # git reset <file> // This command unstages the file, but it preserves the file contents
