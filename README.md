@@ -60,8 +60,8 @@ https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
 - git reset <file> // This command unstages the file, but it preserves the file contents
 - git reset <commit id> // Undoes ALL the commits after the spacified commit and preserves the changes locally
 - git reset –hard <commit id> // It does a hard reset which discard all history and goes back yo the specified commit
-- git checkout // 
-- git checkout <branch name> // It switch to the branch specified
+- git checkout -b <new branch name> // It creates a new branch and It switchs to the new branch
+- git checkout <branch name> // It switchs to the branch specified
 - git log --oneline // This command is used to list the version history for the current branch summarized
 - git branch // It lists all the local branches
 - git branch -d // Delete the current branch
