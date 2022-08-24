@@ -44,12 +44,7 @@ class Vehicle:
             print(self.name)
             
         return self.name
-
-
-    # The destructor it's special method which let us to delete the object we have built.
-    # It's a good practice to delete the objects which we know with centainty if they won't be used more time
-
-        
+    
     # The destructor is a special method which let us to delete the object we have built.
     # It's a good practice to delete the objects which we know with centainty if they won't be used more
 
@@ -102,10 +97,6 @@ F14 = airplane('F14', 2, 2)
 F14.flying_in_the_sky()
 
 del F14
-
-
-# In addtion we can overload the parent's methods. We will use the the parent's methods
-# to create new child methods. We can see the power of inheritance and polymorphism.
 
 # In addtion we can overload the parent's methods. We will use the the parent's methods 
 # to create new child's methods. We can see the power of inheritance and polymorphism.
