@@ -71,3 +71,7 @@ https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
 - git remote add <branch name> <Remote Server Link> // It connects your local repository to your remote repository.
 - git push <branch name> // It  to the branch specified the files commited 
 - git pull // It brings all the changes and new files uploaded to the remote repository
+
+### Helpful links of youtube videos
+
+https://www.youtube.com/watch?v=5g37NElQnCQ&list=WL&index=4
