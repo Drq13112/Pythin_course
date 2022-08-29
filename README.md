@@ -62,15 +62,16 @@ https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
 - git reset –hard <commit id> // It does a hard reset which discard all history and goes back yo the specified commit
 - git checkout -b <new branch name> // It creates a new branch and It switchs to the new branch
 - git checkout <branch name> // It switchs to the branch specified
-- git log --oneline // This command is used to list the version history for the current branch summarized
-- git branch // It lists all the local branches
+- git log --graph --all --oneline // This command is used to list the version history for the current branch summarized
+- git branch -a // It lists all the local branches
 - git branch -d // Delete the current branch
 - git merge <branch name> // It merges the specified branch's histary inte the currente branch
 ### GITHUB 
 - git clone <url> // It clones the url repository within the current path. This command it's pretty essential to establish a solid connection between both
 - git remote add <branch name> <Remote Server Link> // It connects your local repository to your remote repository.
-- git push <branch name> // It  to the branch specified the files commited 
-- git pull // It brings all the changes and new files uploaded to the remote repository
+- git push origin <branch name destination> // It pushs the files commited to the branch specified
+- git push --all // It pushs all the cahnages to the remote repository
+- git pull origin <branch name destination> // It brings all the changes and new files uploaded to the specified branch
 
 ### Helpful links of youtube videos
 
