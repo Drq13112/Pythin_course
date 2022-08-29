@@ -76,3 +76,5 @@ https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
 ### Helpful links of youtube videos
 
 https://www.youtube.com/watch?v=5g37NElQnCQ&list=WL&index=4
+
+https://www.youtube.com/watch?v=9AflLDdSjkg
