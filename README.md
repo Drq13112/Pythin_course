@@ -47,6 +47,34 @@ https://j2logo.com/python/python-requests-peticiones-http/#requests-json
 
 https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
 
+## List of useful commands
 
+### GIT
+- git init // Generate a git empty local repository in the path where you are 
+- git status // Show the status files within the path
+- git add <filename> // Add only the file called to the staging area
+- git add . // Add all the files to the staging area
+- git commit -m “ Write the commit purpose inside these quotation marks ” // This command records or snapshots the file permanently in the version history
+- git diff // Show all the differences between working directory files and localrepo files
+- git git diff –staged // Shows the differences between the files in the staging area and the latest version present
+- git reset <file> // This command unstages the file, but it preserves the file contents
+- git reset <commit id> // Undoes ALL the commits after the spacified commit and preserves the changes locally
+- git reset –hard <commit id> // It does a hard reset which discard all history and goes back yo the specified commit
+- git checkout -b <new branch name> // It creates a new branch and It switchs to the new branch
+- git checkout <branch name> // It switchs to the branch specified
+- git log --graph --all --oneline // This command is used to list the version history for the current branch summarized
+- git branch -a // It lists all the local branches
+- git branch -d // Delete the current branch
+- git merge <branch name> // It merges the specified branch's histary inte the currente branch
+### GITHUB 
+- git clone <url> // It clones the url repository within the current path. This command it's pretty essential to establish a solid connection between both
+- git remote add <branch name> <Remote Server Link> // It connects your local repository to your remote repository.
+- git push origin <branch name destination> // It pushs the files commited to the branch specified
+- git push --all // It pushs all the cahnages to the remote repository
+- git pull origin <branch name destination> // It brings all the changes and new files uploaded to the specified branch
 
+### Helpful links of youtube videos
 
+https://www.youtube.com/watch?v=5g37NElQnCQ&list=WL&index=4
+
+https://www.youtube.com/watch?v=9AflLDdSjkg

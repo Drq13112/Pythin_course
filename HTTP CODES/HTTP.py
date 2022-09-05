@@ -6,7 +6,6 @@ Introducing to request lib and how HTTP works
 
 import time
 import requests
-from flask import *
 
 # Remember to install requests lib before starting
 
@@ -24,6 +23,13 @@ r = requests.get('http://github.com/Drq13112/Python_course')
 
 r = requests.get('https://pokeapi.co/api/v2/pokemon/ditto')
 data = r.json()
+
+search_term = "python"
+r = requests.get(f'https://en.wikipedia.org/wiki/{search_term}')
+r.raise_for_status()
+with open('Python.html', 'wb') as fd:
+    for chunk in r.iter_content(chunk_size=50000):
+        fd.write(chunk)
 
 print("Abilities:")
 for ability in data["abilities"]:
@@ -52,13 +58,11 @@ print("Price at", time.ctime(), ":", data[0]['price'], "€")
 #                         POST                           #
 ##########################################################
 
-r = requests.post('https://en.wikipedia.org/w/index.php',
-                    data={'search': 'Nanotechnology'})
-r.raise_for_status()
-with open('Nanotechnology.html', 'wb') as fd:
-    for chunk in r.iter_content(chunk_size=50000):
-        fd.write(chunk)
-# print(req.content)
+url = 'https://docs.google.com/forms/d/e/1FAIpQLSeSE57fVkrI63HdPthXXk-d-a6Nh60NhMxbGYF2dODrusu1Iw/formResponse'
+form_data = {"entry.1756925075":"David","fvv":1,"draftResponse":'[]',"pageHistory":0,"fbzx":5401894740644093047}
+r=requests.post(url, data=form_data)  
+
+print(r) # response [200]
 
 """
 Send the POST request to the https://httpbin.org website using 
@@ -101,11 +105,3 @@ Last name: <input type="text" name="lastname"><br>
 # We can define a timeout to wait for the response:
 response = requests.post(
     'http://pythonscraping.com/pages/processing.php', data=params, timeout=10)
-
-# If the server doesn't sent a response before the time was gone, the system will
-# send an exception. IN case we hadn't define a timeout, the system will be waiting until
-# it gets the response.
-
-
-# Now we are going to create our own server to who send requests:
-

@@ -3,7 +3,15 @@ from typing import Union
 
 from fastapi import FastAPI
 from pydantic import BaseModel
+"""
+A web API is a part of a website designed to interact with programs that
+use very specific URLs to request certain information. This kind of request
 
+is called an API call. The requested data will be returned in an easily pro-
+cessed format, such as JSON or CSV. Most apps that rely on external data
+
+sources, such as apps that integrate with social media sites, rely on API calls.
+"""
 """
 When you need to send data from a client (let's say, a browser) to your API, 
 you send it as a request body.
