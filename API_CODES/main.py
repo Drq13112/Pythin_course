@@ -35,6 +35,10 @@ async def read_user_me():
 async def read_user(user_id: str):
     return {"user_id": user_id}
 
+@app.post("/items/")
+async def create_item(item: Item):
+    return item
+
 @app.put("/items/{item_id}")
 async def create_item(item_id: int, item: Item, q: Union[str, None] = None):
     result = {"item_id": item_id, **item.dict()}
