@@ -24,12 +24,7 @@ r = requests.get('http://github.com/Drq13112/Python_course')
 r = requests.get('https://pokeapi.co/api/v2/pokemon/ditto')
 data = r.json()
 
-search_term = "python"
-r = requests.get(f'https://en.wikipedia.org/wiki/{search_term}')
-r.raise_for_status()
-with open('Python.html', 'wb') as fd:
-    for chunk in r.iter_content(chunk_size=50000):
-        fd.write(chunk)
+
 
 print("Abilities:")
 for ability in data["abilities"]:
@@ -37,6 +32,13 @@ for ability in data["abilities"]:
 
 print("name:", data['name'])
 
+#Imagine that you want to download the python search on wikipedia:
+search_term = "python"
+r = requests.get(f'https://en.wikipedia.org/wiki/{search_term}')
+r.raise_for_status()
+with open('Python.html', 'wb') as fd:
+    for chunk in r.iter_content(chunk_size=50000):
+        fd.write(chunk)
 # More uses that we can give to this lib.
 # Imagine that you want to create a app which need to check
 # the ETH price periodly.
@@ -76,8 +78,6 @@ print(res.content)
 # Now we are gonna do a request "post" to send data. It's pretty similar than
 # the previous method. Esta parte del codigo es una ejemplo del libro WEB Scraping
 
-
-import requests
 # We create a dictionary where we will save our data
 params = {'firstname': 'David', 'lastname': 'Redondo'}
 

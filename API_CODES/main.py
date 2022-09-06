@@ -31,7 +31,7 @@ class Item(BaseModel):
     description: Union[str, None] = None
     price: float
     tax: Union[float, None] = None
-
+    
 app = FastAPI()
 
 @app.get("/users/me")
@@ -45,14 +45,11 @@ async def read_user(user_id: str):
 
 @app.post("/items/")
 async def create_item(item: Item):
-    return item
-
-@app.put("/items/{item_id}")
-async def create_item(item_id: int, item: Item, q: Union[str, None] = None):
-    result = {"item_id": item_id, **item.dict()}
-    if q:
-        result.update({"q": q})
-    return result
+    item_dict = item.dict()
+    if item.tax:
+        price_with_tax = item.price + item.tax
+        item_dict.update({"price_with_tax": price_with_tax})
+    return item_dict
 
 
     
