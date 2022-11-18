@@ -74,8 +74,8 @@ https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
 - git pull origin <branch name destination> // It brings all the changes and new files uploaded to the specified branch
 
 - In case that you are having troubles to push or fetch your documents, include de command --rebase. This will update the branch with lastest changes. 
- The command will have a sintax similar to this-> git push --rebase <remote> <branch>
-  
+ The command will have a sintax similar to this-> git push --rebase remote branch
+ 
 ![image](https://user-images.githubusercontent.com/80169535/202707128-4ff16fbc-9133-4326-9f1b-b2c9e37c5a76.png)
   
 - If it doesn't work, try with the command -f to force it.
