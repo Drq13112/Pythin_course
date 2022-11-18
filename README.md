@@ -88,3 +88,5 @@ https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
 https://www.youtube.com/watch?v=5g37NElQnCQ&list=WL&index=4
 
 https://www.youtube.com/watch?v=9AflLDdSjkg
+
+https://git-scm.com/book/id/v2/Git-Branching-Remote-Branches
