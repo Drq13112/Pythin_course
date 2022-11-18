@@ -73,6 +73,11 @@ https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
 - git push --all // It pushs all the cahnages to the remote repository
 - git pull origin <branch name destination> // It brings all the changes and new files uploaded to the specified branch
 
+- In case that you are having troubles to push or fetch your documents, include de command --rebase. This will update the brahc with lastest changes. 
+![image](https://user-images.githubusercontent.com/80169535/202707128-4ff16fbc-9133-4326-9f1b-b2c9e37c5a76.png)
+
+
+
 ### Helpful links of youtube videos
 
 https://www.youtube.com/watch?v=5g37NElQnCQ&list=WL&index=4
